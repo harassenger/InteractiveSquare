@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<htm>
+<head>
+    <title>Spectre</title> 
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="main_cluster">
+        <h1>INTERACTIVE RECTANGLE</h1>
+        <div id="main_controls">
+        
+        <div id="shape">
+           <p id="shape_p" class="inline">Shape:</p>
+           <p class="inline-block">Square</p>
+           <input id="shape_slider" class="inline-block" type="range" value="0" min="0" max="50">
+           <p class="inline-block">Circle</p>
+           <br>
+           <p class="inline-block">Speed</p>
+           <input id="shape_speed_slider" class="inline-block" type="range" value="16" min="1" max="31">
+           <input id="shape_button" type="button" value="Start" onClick="autoShape()">
+           <br>
+           <p class="inline-block">Size</p>
+           <input id="size_slider" class="inline-block" type="range" value="500" min="200" max="500">
+           <br>
+           <p class="inline-block">Speed</p>
+           <input id="size_speed_slider" class="inline-block" type="range" value="16" min="1" max="31">
+           <input id="size_button" type="button" value="Start" onClick="autoSize()">
+        </div>
+        
+        <div id="colors">
+            <p id="color_p">Choose Color:</p>
+            <input id="red_radio" class="radio-button" type="radio" name="color" onclick="rgbChange(160, 0 ,0)" />
+                <label for="red_radio"></label>
+            <input id="orange_radio" class="radio-button" type="radio" name="color" onclick="rgbChange(160, 70, 0)" />
+                <label for="orange_radio"></label>
+            <input id="yellow_radio" class="radio-button" type="radio" name="color" onclick="rgbChange(160, 130, 0)" />
+                <label for="yellow_radio"></label>
+            <input id="green_radio" class="radio-button" type="radio" name="color" onclick="rgbChange(0, 160, 0)" />
+                <label for="green_radio"></label>
+                <br>
+            <input id="teal_radio" class="radio-button" type="radio" name="color" onclick="rgbChange(0, 160, 160)" />
+                <label for="teal_radio"></label>
+            <input id="blue_radio" class="radio-button" type="radio" name="color" onclick="rgbChange(0, 50, 160)" />
+                <label for="blue_radio"></label>
+            <input id="purple_radio" class="radio-button" type="radio" name="color" onclick="rgbChange(80, 0, 160)" />
+                <label for="purple_radio"></label>
+            <input id="pink_radio" class="radio-button" type="radio" name="color" onclick="rgbChange(160, 0, 160)" />
+                <label for="pink_radio"></label>
+            <br>
+            
+                <label for="r_slider">R</label>
+            <input id="r_slider" class="all-sliders" type="range" value="255" min="0" max="255"/>
+                <p id="r_slider_value" class="inline-block">255</p>
+            <br>
+                <label for="g_slider">G</label>
+            <input id="g_slider" class="all-sliders" type="range" value="255" min="0" max="255"/>
+                <p id="g_slider_value" class="inline-block">255</p>
+            <br>
+                <label for="b_slider">B</label>
+            <input id="b_slider" class="all-sliders" type="range" value="255" min="0" max="255"/>
+                <p id="b_slider_value" class="inline-block">255</p>
+        </div>
+        
+        <div id="controls">
+           <p id="control_p">Spectrum Controls:</p>
+            <input id="start_button" type="button" value="Start" onclick="startChange()" />
+            <input id="pause_button" type="button" value="Pause" onclick="pauseChange()" disabled/>
+            <input id="reset_button" type="button" value="Reset" onclick="resetChange()"/>
+            <br>
+            <label for="r_slider">Speed</label>
+            <input id="color_speed_slider" class="all-sliders" type="range" value="6" min="1" max="16"/>
+        </div>
+        </div>
+    </div>
+    <div id="second_cluster">
+        <div id="square_one">
+            
+        </div>
+    </div> 
+</body>
+</htm>
